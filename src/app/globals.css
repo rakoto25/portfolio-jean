@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === STYLE GLOBAL PURE CSS, PAS de @apply === */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #020617; /* proche bg-slate-950 */
+  color: #e5e7eb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Sections */
+.section {
+  padding: 5rem 1rem;
+}
+
+.section-inner {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Carte générique */
+.card {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid #1f2937;
+  border-radius: 1rem;
+  padding: 1.75rem 2rem;
+}
+
+/* Petits éléments réutilisables */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid #374151;
+  background: rgba(15, 23, 42, 0.9);
+  padding: 0.25rem 1rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #d1d5db;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  box-shadow: 0 15px 30px rgba(79, 70, 229, 0.4);
+  text-decoration: none;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  border: 1px solid #4b5563;
+  text-decoration: none;
+}
+
+/* Grille projets */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 1rem;
+  border: 1px solid #111827;
+  padding: 1.25rem 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  border-color: #6366f1;
+  box-shadow: 0 20px 35px rgba(79, 70, 229, 0.35);
+}
+
+.project-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.project-url {
+  font-size: 0.75rem;
+  color: #a5b4fc;
+}
+
+.project-desc {
+  font-size: 0.8rem;
+  color: #d1d5db;
+  margin-top: 0.25rem;
+}
+
+.project-tech {
+  font-size: 0.7rem;
+  color: #9ca3af;
+  font-style: italic;
+  margin-top: 0.25rem;
+}

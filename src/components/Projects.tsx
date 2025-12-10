@@ -40,8 +40,8 @@ const projects = [
   {
     icon: '🧩',
     name: 'Espace Pièces',
-    url: 'espacepiecesautos.fr',
-    href: 'https://espacepiecesautos.fr',
+    url: 'espacepiecesautos.com',
+    href: 'https://espacepiecesautos.com',
     desc: 'Catalogue de pièces détachées avec recherche filtrée et gestion fine des références.',
     tech: ['WooCommerce', 'Filtres produits', 'Bootstrap', 'CSS', 'JS', 'Performance'],
     role: 'Architecture produit & filtres',
